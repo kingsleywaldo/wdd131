@@ -6,12 +6,13 @@
 
     <title>WDD 131 – Dynamic Web Fundamentals – Kingsley Waldo</title>
 
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Kingsley Waldo - course landing page covering HTML, CSS, and JavaScript basics">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course landing page for Kingsley Waldo">
     <meta name="author" content="Kingsley Waldo">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
@@ -27,9 +28,9 @@
     <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
 
     <nav class="navigation">
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener noreferrer">Scripture</a>
         <a href="#">Final Project</a>
     </nav>
 </header>
@@ -38,62 +39,70 @@
 
     <h1>Kingsley Waldo</h1>
 
-    <section class="card">
+    <section class="card about">
         <h2>About Me</h2>
 
-        <img src="images/profile.jpg" alt="Photo of Kingsley Waldo" class="profile-image">
+        <img src="images/profile.jpg"
+             alt="Portrait of Kingsley Waldo"
+             class="profile-image">
 
         <p>
-            My name is Kingsley Waldo. I am married with three children and
-            currently live in Port Harcourt, Nigeria. I am studying Web
-            Development and enjoy learning HTML, CSS, and JavaScript. My goal
-            is to become a skilled front-end developer and build responsive,
-            accessible, and user-friendly websites.
+            Hello! My name is Kingsley Waldo. I live in Port Harcourt, Nigeria,
+            with my wife and our three children. I enjoy learning new
+            technologies and have developed a strong interest in web
+            development. I am currently studying HTML, CSS, and JavaScript to
+            build responsive, accessible, and user-friendly websites. My goal
+            is to become a skilled front-end developer and eventually work on
+            projects that make a positive impact in people's lives.
         </p>
+
+        <h3>Port Harcourt, Nigeria</h3>
+
+        <figure>
+            <img src="images/nigeriaflag.jpg"
+                 alt="Flag of Nigeria"
+                 class="country-image">
+
+            <figcaption>Official Flag of Nigeria</figcaption>
+        </figure>
+
+        <p>
+            Nigeria is located in West Africa and is the most populous country
+            on the continent. It is known for its rich cultural diversity,
+            vibrant music, delicious cuisine, and beautiful landscapes. Port
+            Harcourt, where I live, is an important city in the Niger Delta and
+            is recognized as a major center for Nigeria's oil and gas industry.
+        </p>
+
     </section>
 
-    <section class="card">
+    <aside class="card resources">
+
         <h2>Web Development Resources</h2>
 
-        <p>
-            These are some websites I use to improve my web development skills.
-        </p>
-
         <ul>
-            <li>
-                <a href="https://developer.mozilla.org/" target="_blank">
-                    MDN Web Docs
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.w3schools.com/" target="_blank">
-                    W3Schools
-                </a>
-            </li>
-
-            <li>
-                <a href="https://github.com/" target="_blank">
-                    GitHub
-                </a>
-            </li>
+            <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+            <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a></li>
+            <li><a href="https://web.dev/" target="_blank" rel="noopener noreferrer">web.dev</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">CodePen</a></li>
+            <li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Validator</a></li>
+            <li><a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">Google Fonts</a></li>
         </ul>
 
-        <p>
-            My goal is to become a strong front-end developer and continue
-            learning modern web technologies.
-        </p>
-
-    </section>
+    </aside>
 
 </main>
 
 <footer>
+
     <p>
-        &copy; <span id="currentyear"></span> Kingsley Waldo - Nigeria
+        &copy; <span id="currentyear"></span> Kingsley Waldo | Nigeria
     </p>
 
     <p id="lastModified"></p>
+
 </footer>
 
 </body>
