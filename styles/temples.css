@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -24,7 +24,7 @@ header {
 }
 
 
-header h1 {
+header p {
     font-size: 28px;
 }
 
@@ -56,7 +56,6 @@ nav a:hover {
 }
 
 
-
 /* Main */
 
 main {
@@ -73,53 +72,40 @@ main h1 {
 }
 
 
-
 /* Gallery */
 
 .gallery {
-
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px 15px;
-
 }
 
 
-
 figure img {
-
     width: 100%;
     height: 150px;
     object-fit: cover;
-
 }
 
 
 figcaption {
-
     color: darkblue;
     margin-top: 8px;
     font-size: 16px;
-
 }
-
 
 
 /* Footer */
 
 footer {
-
     background-color: #4b0875;
     color: white;
     text-align: center;
     padding: 12px;
     font-size: 16px;
-
 }
 
 
 footer p {
-
     margin: 3px;
-
 }
