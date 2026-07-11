@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) {
+
+
+.gallery {
+
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+figure img {
+
+    height: 150px;
+
+}
+
+
+}
