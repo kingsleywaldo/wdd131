@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="Discover Nigeria, the Giant of Africa. Learn about its culture, geography, weather, and landmarks.">
-    <meta name="author" content="Your Name">
+
+    <meta name="author" content="Kingsley Waldo">
+
     <title>Nigeria | Country Page</title>
 
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
+
     <script src="scripts/place.js" defer></script>
 </head>
 
@@ -20,62 +24,80 @@
 
 <main>
 
-<section class="hero">
-    <picture>
-        <source media="(min-width:768px)" srcset="images/nigeria-large.webp">
-        <img src="images/nigeria-small.webp"
-             alt="Beautiful scenery of Nigeria"
-             width="1200"
-             height="700">
-    </picture>
-</section>
+    <div class="hero">
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/nigeria-large.webp">
 
-<section class="info">
+            <img 
+                src="images/nigeria-small.webp"
+                alt="Beautiful scenery of Nigeria"
+                width="1200"
+                height="700">
+        </picture>
+    </div>
 
-<div class="card">
-<h2>Data</h2>
 
-<p><strong>Country:</strong> Nigeria</p>
-<p><strong>Capital:</strong> Abuja</p>
-<p><strong>Population:</strong> 223 Million</p>
-<p><strong>Area:</strong> 923,768 km²</p>
-<p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</p>
-<p><strong>Currency:</strong> Nigerian Naira (₦)</p>
-<p><strong>Time Zone:</strong> UTC +1</p>
+    <section class="info">
 
-</div>
+        <div class="card">
+            <h2>Data</h2>
 
-<div class="card weather">
+            <p><strong>Country:</strong> Nigeria</p>
+            <p><strong>Capital:</strong> Abuja</p>
+            <p><strong>Population:</strong> 223 Million</p>
+            <p><strong>Area:</strong> 923,768 km²</p>
+            <p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</p>
+            <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+            <p><strong>Time Zone:</strong> UTC +1</p>
 
-<h2>Weather</h2>
+        </div>
 
-<img class="weather-icon"
-src="images/weather.svg"
-alt="Weather Icon">
 
-<p><strong>Temperature:</strong> <span id="temp">28</span>°C</p>
+        <div class="card weather">
 
-<p><strong>Conditions:</strong> Sunny</p>
+            <h2>Weather</h2>
 
-<p><strong>Wind Speed:</strong> <span id="wind">10</span> km/h</p>
+            <img 
+                class="weather-icon"
+                src="images/weather.svg"
+                alt="Partly cloudy weather icon">
 
-<p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+            <p>
+                <strong>Temperature:</strong>
+                <span id="temp">28</span>°C
+            </p>
 
-</div>
+            <p>
+                <strong>Conditions:</strong>
+                Sunny
+            </p>
 
-</section>
+            <p>
+                <strong>Wind Speed:</strong>
+                <span id="wind">10</span> km/h
+            </p>
+
+            <p>
+                <strong>Wind Chill:</strong>
+                <span id="windchill"></span>
+            </p>
+
+        </div>
+
+    </section>
 
 </main>
 
+
 <footer>
 
-<p>
-&copy;
-<span id="year"></span>
-Kingsley Waldo | Nigeria
-</p>
+    <p>
+        &copy;
+        <span id="year"></span>
+        Kingsley Waldo | Nigeria
+    </p>
 
-<p id="lastModified"></p>
+    <p id="lastModified"></p>
 
 </footer>
 
