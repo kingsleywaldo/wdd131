@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Nigeria, the Giant of Africa. Learn about its culture, geography, weather, and landmarks.">
+    <meta name="author" content="Your Name">
+    <title>Nigeria | Country Page</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Nigeria 🇳🇬</h1>
+</header>
+
+<main>
+
+<section class="hero">
+    <picture>
+        <source media="(min-width:768px)" srcset="images/nigeria-large.webp">
+        <img src="images/nigeria-small.webp"
+             alt="Beautiful scenery of Nigeria"
+             width="1200"
+             height="700">
+    </picture>
+</section>
+
+<section class="info">
+
+<div class="card">
+<h2>Data</h2>
+
+<p><strong>Country:</strong> Nigeria</p>
+<p><strong>Capital:</strong> Abuja</p>
+<p><strong>Population:</strong> 223 Million</p>
+<p><strong>Area:</strong> 923,768 km²</p>
+<p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</p>
+<p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+<p><strong>Time Zone:</strong> UTC +1</p>
+
+</div>
+
+<div class="card weather">
+
+<h2>Weather</h2>
+
+<img class="weather-icon"
+src="images/weather.svg"
+alt="Weather Icon">
+
+<p><strong>Temperature:</strong> <span id="temp">28</span>°C</p>
+
+<p><strong>Conditions:</strong> Sunny</p>
+
+<p><strong>Wind Speed:</strong> <span id="wind">10</span> km/h</p>
+
+<p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+&copy;
+<span id="year"></span>
+Kingsley Waldo | Nigeria
+</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
