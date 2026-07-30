@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#FFF8F0;
+    color:#333;
+    margin:0;
+}
+
+header{
+    background:#6F4E37;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+h1,h2{
+    font-family:'Poppins',sans-serif;
+}
+
+main{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+}
+
+section{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+    border-radius:8px;
+}
+
+h2{
+    color:#6F4E37;
+}
+
+pre{
+    background:#f4f4f4;
+    padding:15px;
+    overflow:auto;
+}
+
+footer{
+    background:#6F4E37;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
