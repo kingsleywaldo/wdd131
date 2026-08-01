@@ -6,11 +6,10 @@
 
     <title>Product Review Form</title>
 
-    <meta name="description" content="Product review form for customers to submit feedback.">
+    <meta name="description" content="Product review form for customers to submit feedback on products and services.">
     <meta name="author" content="Kingsley Waldo">
 
     <link rel="stylesheet" href="styles/form.css">
-
     <script src="scripts/form.js" defer></script>
 </head>
 
@@ -24,77 +23,96 @@
 
 <form method="get" action="review.html">
 
-<label for="product">Product Name <span>*</span></label>
+    <!-- Product Name -->
+    <label for="product">
+        Product Name <span>*</span>
+    </label>
 
-<select id="product" name="product" required>
-    <option value="">Select a Product</option>
-</select>
+    <select id="product" name="product" required>
+        <option value="" selected disabled>Select a Product</option>
+    </select>
 
+    <!-- Overall Rating -->
+    <fieldset>
+        <legend>Overall Rating <span>*</span></legend>
 
-<label>Overall Rating <span>*</span></label>
+        <input type="radio" id="rate1" name="rating" value="1" required>
+        <label for="rate1">★</label>
 
-<div class="rating">
-    <label><input type="radio" name="rating" value="1" required> ⭐</label>
-    <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
-    <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
-    <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
-    <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
-</div>
+        <input type="radio" id="rate2" name="rating" value="2" required>
+        <label for="rate2">★★</label>
 
+        <input type="radio" id="rate3" name="rating" value="3" required>
+        <label for="rate3">★★★</label>
 
-<label for="date">Date Installed <span>*</span></label>
+        <input type="radio" id="rate4" name="rating" value="4" required>
+        <label for="rate4">★★★★</label>
 
-<input type="date" id="date" name="date" required>
+        <input type="radio" id="rate5" name="rating" value="5" required>
+        <label for="rate5">★★★★★</label>
 
+    </fieldset>
 
-<label>Useful Features (Check all that apply)</label>
+    <!-- Date -->
+    <label for="date">
+        Date of Installation <span>*</span>
+    </label>
 
-<label>
-<input type="checkbox" name="features" value="easy">
-Easy to Use
-</label>
+    <input
+        type="date"
+        id="date"
+        name="installation-date"
+        required>
 
-<label>
-<input type="checkbox" name="features" value="quality">
-Good Quality
-</label>
+    <!-- Features -->
+    <fieldset>
+        <legend>Useful Features (Check all that apply)</legend>
 
-<label>
-<input type="checkbox" name="features" value="design">
-Great Design
-</label>
+        <input type="checkbox" id="easy" name="features" value="easy">
+        <label for="easy">Easy to Use</label>
 
-<label>
-<input type="checkbox" name="features" value="price">
-Affordable Price
-</label>
+        <input type="checkbox" id="quality" name="features" value="quality">
+        <label for="quality">Good Quality</label>
 
+        <input type="checkbox" id="design" name="features" value="design">
+        <label for="design">Great Design</label>
 
-<label for="review">
-Written Review
-</label>
+        <input type="checkbox" id="price" name="features" value="price">
+        <label for="price">Affordable Price</label>
 
-<textarea id="review" name="review"></textarea>
+    </fieldset>
 
+    <!-- Written Review -->
+    <label for="review">
+        Written Review
+    </label>
 
-<label for="name">
-Your Name
-</label>
+    <textarea
+        id="review"
+        name="review"
+        rows="5"></textarea>
 
-<input type="text" id="name" name="name">
+    <!-- User Name -->
+    <label for="name">
+        Your Name
+    </label>
 
+    <input
+        type="text"
+        id="name"
+        name="name">
 
-<input type="submit" value="Submit Review">
+    <button type="submit">
+        Submit Review
+    </button>
 
 </form>
 
 </main>
 
-
 <footer>
-<p>&copy; 2026 Product Review</p>
+    <p>&copy; 2026 Kingsley Waldo | WDD 131 Product Review</p>
 </footer>
-
 
 </body>
 </html>
