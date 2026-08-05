@@ -1,118 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Product Review Form</title>
 
     <meta name="description" content="Product review form for customers to submit feedback on products and services.">
+
     <meta name="author" content="Kingsley Waldo">
 
     <link rel="stylesheet" href="styles/form.css">
+
     <script src="scripts/form.js" defer></script>
+
 </head>
+
 
 <body>
 
+
 <header>
+
     <h1>Product Review</h1>
+
 </header>
+
+
 
 <main>
 
+
 <form method="get" action="review.html">
 
-    <!-- Product Name -->
-    <label for="product">
-        Product Name <span>*</span>
-    </label>
 
-    <select id="product" name="product" required>
-        <option value="" selected disabled>Select a Product</option>
-    </select>
+<label for="product">
+    Product Name <span aria-label="required">*</span>
+</label>
 
-    <!-- Overall Rating -->
-    <fieldset>
-        <legend>Overall Rating <span>*</span></legend>
 
-        <input type="radio" id="rate1" name="rating" value="1" required>
-        <label for="rate1">★</label>
+<select id="product" name="product" required>
 
-        <input type="radio" id="rate2" name="rating" value="2" required>
-        <label for="rate2">★★</label>
+    <option value="" selected disabled>
+        Select a Product
+    </option>
 
-        <input type="radio" id="rate3" name="rating" value="3" required>
-        <label for="rate3">★★★</label>
+</select>
 
-        <input type="radio" id="rate4" name="rating" value="4" required>
-        <label for="rate4">★★★★</label>
 
-        <input type="radio" id="rate5" name="rating" value="5" required>
-        <label for="rate5">★★★★★</label>
 
-    </fieldset>
 
-    <!-- Date -->
-    <label for="date">
-        Date of Installation <span>*</span>
-    </label>
 
-    <input
-        type="date"
-        id="date"
-        name="installation-date"
-        required>
+<fieldset>
 
-    <!-- Features -->
-    <fieldset>
-        <legend>Useful Features (Check all that apply)</legend>
+<legend>
+    Overall Rating <span aria-label="required">*</span>
+</legend>
 
-        <input type="checkbox" id="easy" name="features" value="easy">
-        <label for="easy">Easy to Use</label>
 
-        <input type="checkbox" id="quality" name="features" value="quality">
-        <label for="quality">Good Quality</label>
+<div class="rating">
 
-        <input type="checkbox" id="design" name="features" value="design">
-        <label for="design">Great Design</label>
 
-        <input type="checkbox" id="price" name="features" value="price">
-        <label for="price">Affordable Price</label>
+<input type="radio" id="rate1" name="rating" value="1" required>
+<label for="rate1">★</label>
 
-    </fieldset>
 
-    <!-- Written Review -->
-    <label for="review">
-        Written Review
-    </label>
+<input type="radio" id="rate2" name="rating" value="2">
+<label for="rate2">★★</label>
 
-    <textarea
-        id="review"
-        name="review"
-        rows="5"></textarea>
 
-    <!-- User Name -->
-    <label for="name">
-        Your Name
-    </label>
+<input type="radio" id="rate3" name="rating" value="3">
+<label for="rate3">★★★</label>
 
-    <input
-        type="text"
-        id="name"
-        name="name">
 
-    <button type="submit">
-        Submit Review
-    </button>
+<input type="radio" id="rate4" name="rating" value="4">
+<label for="rate4">★★★★</label>
+
+
+<input type="radio" id="rate5" name="rating" value="5">
+<label for="rate5">★★★★★</label>
+
+
+</div>
+
+
+</fieldset>
+
+
+
+
+
+<label for="date">
+    Date of Installation <span aria-label="required">*</span>
+</label>
+
+
+<input
+type="date"
+id="date"
+name="installation-date"
+required>
+
+
+
+
+
+<fieldset>
+
+
+<legend>
+    Useful Features (Check all that apply)
+</legend>
+
+
+
+<input type="checkbox" id="easy" name="features" value="easy">
+
+<label for="easy">
+Easy to Use
+</label>
+
+
+
+<input type="checkbox" id="quality" name="features" value="quality">
+
+<label for="quality">
+Good Quality
+</label>
+
+
+
+<input type="checkbox" id="design" name="features" value="design">
+
+<label for="design">
+Great Design
+</label>
+
+
+
+<input type="checkbox" id="price" name="features" value="price">
+
+<label for="price">
+Affordable Price
+</label>
+
+
+
+</fieldset>
+
+
+
+
+
+<label for="review">
+    Written Review
+</label>
+
+
+<textarea
+id="review"
+name="review"
+rows="5"
+placeholder="Write your review here">
+</textarea>
+
+
+
+
+
+<label for="name">
+    Your Name
+</label>
+
+
+<input
+type="text"
+id="name"
+name="name"
+placeholder="Enter your name">
+
+
+
+
+
+<button type="submit">
+Submit Review
+</button>
+
+
 
 </form>
 
+
 </main>
 
+
+
+
 <footer>
-    <p>&copy; 2026 Kingsley Waldo | WDD 131 Product Review</p>
+
+<p>
+&copy; 2026 Kingsley Waldo | WDD 131 Product Review
+</p>
+
 </footer>
 
+
+
 </body>
+
 </html>
