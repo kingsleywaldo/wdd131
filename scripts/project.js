@@ -7,7 +7,7 @@
 const products = [
     {
         name: "Birthday Cake",
-        price: "₦15,000",
+        price: "₦20,000",
         image: "images/cake1.jpg",
         description: "Beautiful customized cakes for birthdays and celebrations."
     },
@@ -28,7 +28,7 @@ const products = [
 
     {
         name: "Pastries",
-        price: "₦800",
+        price: "₦900",
         image: "images/pastry.jpg",
         description: "Delicious meat pies, doughnuts, and other pastries."
     }
