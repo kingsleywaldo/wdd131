@@ -15,7 +15,7 @@ const products = [
     {
         name: "Wedding Cake",
         price: "₦80,000",
-        image: "images/cake2.jpg",
+        image: "images/weddingcake.jpg",
         description: "Elegant wedding cakes designed for special occasions."
     },
 
